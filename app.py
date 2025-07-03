@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 import io
 
-st.title("🔍 Simple Face Recognition Demo")
+st.title("🔍 Face Recognition App")
 
 # Upload known face
 known_img_file = st.file_uploader("Upload a known face image", type=["jpg", "jpeg", "png"])

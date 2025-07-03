@@ -23,8 +23,8 @@ if known_img_file and check_img_file:
         distance = face_recognition.face_distance([known_encoding], check_encoding)[0]
 
         col1, col2 = st.columns(2)
-        col1.image(known_image, caption="Known Image", use_column_width=True)
-        col2.image(check_image, caption="Image to Check", use_column_width=True)
+        col1.image(known_image, caption="Known Image", use_container_width=True)
+        col2.image(check_image, caption="Image to Check", use_container_width=True)
 
         if results[0]:
             st.success(f"✅ Match found! (Distance: {distance:.2f})")
